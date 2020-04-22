@@ -63,7 +63,7 @@ For pushes to the `master` branch, this workflow will:
 
 1.  [Create a JSON service account key][create-key] for the service account.
 
-1.  Add the following secrets to your repository's secrets (Under Security-> Secret):
+1.  Add the following secrets to your repository's secrets (Under Security-> Secrets):
 
     - `CLOUD_RUN_PROJECT`: Google Cloud project ID
 
