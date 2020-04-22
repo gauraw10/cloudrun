@@ -3,9 +3,6 @@
 An example workflow that uses [GitHub Actions][actions] to deploy a
 [Hello World Node.js app](index.js) to [Cloud Run][cloud-run].
 
-This code is intended to be an _example_. You will likely need to change or
-update values to match your setup.
-
 ## Workflow description
 
 For pushes to the `master` branch, this workflow will:
@@ -33,13 +30,13 @@ For pushes to the `master` branch, this workflow will:
 
     1.  Move into the repository directory:
 
-        ```
+        ```sh
         $ cd <repo>
         ```
 
     1.  Copy the example into the repository:
 
-        ```
+        ```sh
         $ cp -r <path_to>/github-actions/example-workflows/cloud-run/ .
         ```
 
@@ -66,13 +63,13 @@ For pushes to the `master` branch, this workflow will:
 
 1.  [Create a JSON service account key][create-key] for the service account.
 
-1.  Add the following secrets to your repository's secrets:
+1.  Add the following secrets to your repository's secrets (Under Security-> Secret):
 
-    - `RUN_PROJECT`: Google Cloud project ID
+    - `CLOUD_RUN_PROJECT`: Google Cloud project ID
 
-    - `RUN_SA_EMAIL`: the email of the service account
+    - `CLOUD_RUN_SA_EMAIL`: the email of the service account
 
-    - `RUN_SA_KEY`: the content of the service account JSON file
+    - `CLOUD_RUN_SA_KEY`: the content of the service account JSON file
 
 ## Run the workflow
 
