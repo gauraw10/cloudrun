@@ -23,7 +23,7 @@ on:
     - master
 
 env:
-  PROJECT_ID: ${{ secrets.CLOUUD_RUN_PROJECT }}
+  PROJECT_ID: ${{ secrets.CLOUD_RUN_PROJECT }}
   CLOUD_RUN_REGION: europe-west1
   SERVICE_NAME: helloworld-nodejs
 
